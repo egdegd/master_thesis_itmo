@@ -20,6 +20,7 @@
 \newtheorem{theorem}{Теорема}
 \newtheorem{lemma}{Лемма}
 \newtheorem{observation}{Наблюдение}[section]
+\newtheorem{openproblem}{Открытая задача}[section]
 
 \DeclareMathOperator{\CNF}{CNF}
 \DeclareMathOperator{\AND}{AND}
@@ -28,11 +29,28 @@
 \DeclareMathOperator{\MAJ}{MAJ}
 \DeclareMathOperator{\size}{size}
 
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%\usepackage{complexity}
+%\usepackage{tikz}
+
 \begin{document}
 %\listoftodos
 
 % Титульник в файле titlepage.tex
-\input{titlepage.tex}
+%\input{titlepage.tex}
 
 % Содержание
 \tableofcontents
@@ -40,15 +58,11 @@
 
 \include{items/intro}
 
-%\include{items/problem}
-
 \include{items/chap1}
-%
-%\include{items/chap2}
-%
-%\include{items/chap3}
-%
-%\include{items/concl}
+
+\include{items/chap2}
+
+\include{items/concl}
 
 
 
